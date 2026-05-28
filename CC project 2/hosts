@@ -1,9 +1,0 @@
-[defaults]
-# Tell Ansible to look for roles in the 'roles' folder in the current directory
-roles_path = ./roles
-
-# Use the inventory file we created
-inventory = ./inventory/hosts
-
-# Disable host key checking (avoids "yes/no" prompts for new servers)
-host_key_checking = False
