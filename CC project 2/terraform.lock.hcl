@@ -1,0 +1,11 @@
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+terraform.tfvars
+*.pem
+id_ed25519
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
