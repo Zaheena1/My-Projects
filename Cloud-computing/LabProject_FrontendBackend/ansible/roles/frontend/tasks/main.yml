@@ -1,0 +1,17 @@
+---
+- name: Install Nginx
+  dnf:
+    name: nginx
+    state: present
+
+- name: Start and Enable Nginx
+  service:
+    name: nginx
+    state: started
+    enabled: true
+
+- name: Deploy Nginx Load Balancer Config
+  template:
+    src: nginx_frontend.conf.j2
+    dest: /etc/nginx/nginx.conf
+  notify: Restart Nginx
